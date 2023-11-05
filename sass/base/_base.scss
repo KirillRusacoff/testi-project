@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden !important;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: $color-black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ol, li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+
+    background-color: transparent;
+
+    font-size: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input {
+    border: none; 
+    outline: none; 
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 127rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    /* Tablet */
+    @media (max-width: 1269px) {
+        width: 80rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 799px) {
+        width: 37.5rem;
+    }
+}
